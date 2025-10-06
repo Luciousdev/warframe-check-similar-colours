@@ -3,6 +3,16 @@
 A lot of inspiration for this came from [https://gluckogon.github.io/warframe/wf_colors/index.html](https://gluckogon.github.io/warframe/wf_colors/index.html). Go check it out, it is an amazing project!
 This project was made in a couple hours, so might get some fixes and changes soon.
 
+## How to run locally
+
+Due to how most browsers work with the module import in js, if you run it with file:// it will not work due to CORS. If you have python installed run the following command to spin up a small live server.
+
+```bash
+python3 -m http.server
+```
+
+You should be able to then access the by visiting "http://[::1]:8000/".
+
 ## Formula used
 
 Basically euclidean distance.
