@@ -3,6 +3,10 @@
 A lot of inspiration for this came from [https://gluckogon.github.io/warframe/wf_colors/index.html](https://gluckogon.github.io/warframe/wf_colors/index.html). Go check it out, it is an amazing project!
 This project was made in a couple hours, so might get some fixes and changes soon.
 
+### Why?
+
+Personally I have experiences multiple times that I wanted a colour for a fashion but that I don't have a certain palette. Searching which colour from a palette I do have is quite a hassle. This makes it really easy to find comparable colours.
+
 ## How to run locally
 
 Due to how most browsers work with the module import in js, if you run it with file:// it will not work due to CORS. If you have python installed run the following command to spin up a small live server.
@@ -39,6 +43,9 @@ function colorDistance(c1, c2) {
     - "Limit to one per palette": When searching it will only show 1 result per palette, resulting in more palette variaty.
 3. It is possible as well to click on the colours in the colour palettes.
 
+## Todo List
+
+- [] Add the capability to only search between palettes you own. (and making it remember between sessions.)
 
 ### Outro
 
