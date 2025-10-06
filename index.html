@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Find Closest Colour</h1>
+    <p>Type or click on a colour:</p>
+    <input id="colorInput" type="text" value="#668643" placeholder="#AABBCC">
+    <label>
+        <input type="checkbox" id="excludeSame" /> Exclude same palette
+    </label>
+    <label>
+        <input type="checkbox" id="limitOnePerPalette" /> Limit to one per palette
+    </label>
+
+    <div id="result" class="result"></div>
+    <div class="palettes" id="palettesContainer"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
