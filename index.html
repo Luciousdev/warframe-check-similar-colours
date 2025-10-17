@@ -10,13 +10,36 @@
 <body>
     <h1>Find Closest Colour</h1>
     <p>Type or click on a colour:</p>
-    <input id="colorInput" type="text" value="#668643" placeholder="#AABBCC">
-    <label>
-        <input type="checkbox" id="excludeSame" /> Exclude same palette
-    </label>
-    <label>
-        <input type="checkbox" id="limitOnePerPalette" /> Limit to one per palette
-    </label>
+    <div class="top-row">
+        <div class="picker-group">
+            <input id="colorInput" type="text" value="#668643" placeholder="#AABBCC">
+            <input id="colorPicker" type="color" value="#668643" title="Pick a colour">
+        </div>
+
+        <div class="controls">
+            <label class="toggle">
+                <input type="checkbox" id="onlyOwned" />
+                <span class="toggle-switch"></span>
+                <span class="toggle-label">Only search owned palettes</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="excludeSame" />
+                <span class="toggle-switch"></span>
+                <span class="toggle-label">Exclude same palette</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="limitOnePerPalette" />
+                <span class="toggle-switch"></span>
+                <span class="toggle-label">Limit to one per palette</span>
+            </label>
+        </div>
+
+        <div class="actions">
+            <div class="owned-count">Owned: <span id="ownedCount">0</span></div>
+            <button id="markAllOwned" title="Mark all palettes as owned">Mark all</button>
+            <button id="unmarkAllOwned" title="Clear owned marks">Unmark</button>
+        </div>
+    </div>
 
     <div id="result" class="result"></div>
     <div class="palettes" id="palettesContainer"></div>
