@@ -45,7 +45,7 @@ function colorDistance(c1, c2) {
 
 ## Todo List
 
-- [ ] Add the capability to only search between palettes you own. (and making it remember between sessions.)
+- [x] Add the capability to only search between palettes you own. (and making it remember between sessions.)
 
 ### Outro
 
